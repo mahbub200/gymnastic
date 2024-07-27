@@ -63,6 +63,7 @@ nav {
 /* banner section starts  */
 .banner {
   display: flex;
+  margin-bottom: 100px;
 }
 .dancing-script-shape {
   font-family: "Dancing Script", cursive;
@@ -145,6 +146,32 @@ nav {
   margin-right: 10px;
 }
 
+/* change your habit  */
+.habit {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.habit-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.habit-flex {
+  height: 374px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.habit img {
+  border-radius: 50%;
+  /* width: 50%; */
+}
+
 /* media query for small device  */
 @media screen and (max-width: 600px) {
   body {
@@ -199,5 +226,19 @@ nav {
     display: block;
     margin-left: 10px;
     margin-top: 5px;
+  }
+
+  .habit {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .habit p,
+  h2 {
+    text-align: center;
+  }
+
+  .habit img {
+    border-radius: 50%;
+    /* width: 50%; */
   }
 }
