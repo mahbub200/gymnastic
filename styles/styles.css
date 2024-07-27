@@ -3,8 +3,14 @@
 // <weight>: Use a value from 100 to 900 */
 
 body {
-  /* background-color: black; */
-  background-color: blue;
+  background-color: black;
+  /* background-color: blue; */
+  margin-left: 100px;
+  margin-right: 100px;
+  color: white;
+}
+body p {
+  opacity: 0.5;
 }
 .intern-styles-font {
   font-family: "Inter", sans-serif;
@@ -15,11 +21,8 @@ body {
 }
 /* navbar link starts here  */
 nav {
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 .nav-home-link {
   width: 92px;
@@ -41,16 +44,39 @@ nav {
   /* justify-content: space-evenly; */
 }
 
-.nav-links p {
+.nav-links a {
   margin-right: 47px;
   color: white;
+  text-decoration: none;
 }
 .heading-title {
   color: rgb(230, 83, 60);
   font-size: 36px;
   font-weight: 800;
 }
+.hamburger {
+  display: none;
+}
 
 /* media query for small device  */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+  body {
+    background-color: black;
+    /* background-color: blue; */
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
