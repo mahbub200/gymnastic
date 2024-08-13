@@ -22,6 +22,7 @@ body p {
   font-variation-settings: "slnt" 0;
 }
 /* navbar link starts here  */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -62,8 +63,36 @@ nav {
 
 /* banner section starts  */
 .banner {
+  margin: 0;
+  margin-left: -100px;
+  margin-right: -100px;
+  width: calc(100% + 200px);
   display: flex;
   margin-bottom: 100px;
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
+  position: relative;
+}
+.hidden {
+  display: none;
+}
+.banner-image {
+  margin-left: 150px;
+  background-image: url("../images/banner.png");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 400px;
+  position: relative;
+  background-blend-mode: overlay;
 }
 .dancing-script-shape {
   font-family: "Dancing Script", cursive;
@@ -78,6 +107,10 @@ nav {
 }
 .banner p {
   opacity: 0.5;
+}
+.banner-left {
+  width: 40%;
+  margin-left: 100px;
 }
 .join-club-button {
   width: 200px;
@@ -99,14 +132,6 @@ nav {
   text-align: center;
   border: 1px solid white;
 }
-.banner-left {
-  width: 50%;
-}
-.banner img {
-  position: relative;
-  width: 100%;
-  margin-left: 50px;
-}
 
 .banner-image-writings {
   position: absolute;
@@ -116,10 +141,16 @@ nav {
   /* top: 20px; */
   width: 190px;
   height: 120px;
-  top: 250px;
-  right: 200px;
+  top: 100px;
+  right: 80px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
+}
+.banner-image-writings h1 {
+  font-size: 40px;
+}
+.banner-image-writings p {
+  margin-top: -30px;
 }
 .play-icon {
   display: none;
@@ -133,8 +164,8 @@ nav {
   /* top: 20px; */
   width: 190px;
   height: 120px;
-  left: 600px;
-  top: 600px;
+  top: 400px;
+  right: 450px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
 }
@@ -196,6 +227,9 @@ nav {
 
   .banner {
     flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
   }
   .banner-button {
     display: flex;
@@ -203,6 +237,11 @@ nav {
 
   .banner h1 {
     font-size: 36px;
+  }
+  .banner-left {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   .dancing-script-shape {
     /* font-style: normal; */
