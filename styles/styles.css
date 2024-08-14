@@ -467,26 +467,37 @@ p {
   .bmi-title {
     margin-left: 100px;
     text-align: left;
+    margin: 0 auto;
+  }
+  .bmi-boundary {
+    border: 2px solid red;
   }
   .bmi-description {
-    margin-left: 80px;
+    width: 100%;
+    margin-left: 30px;
     text-align: left;
+    margin: 0 auto;
   }
   .bmi-section {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    overflow-x: hidden;
 
     /* background-color: rgb(34, 34, 34); */
   }
   .bmi-chart {
     margin-left: 100px;
-    width: 90%;
+    /* width: 90%;
+     */
+    width: 100%;
   }
   .bmi-chart-heading {
     text-align: left;
+    /* width: 70%; */
   }
   .bmi-calculator {
-    margin-right: 100px;
+    margin-right: 0px;
   }
   .bmi-calculator p {
     text-align: left;
