@@ -326,7 +326,8 @@ select {
   position: relative;
 }
 .trainer-category {
-  color: gray;
+  color: rgb(128, 128, 128);
+  text-align: left;
 }
 .teams img {
   width: 100%;
@@ -487,8 +488,8 @@ p {
   color: rgb(230, 83, 60);
 }
 .horizantal-line {
-  text-align: center;
-  width: 100%;
+  margin: 0 auto;
+  width: 700px;
 }
 #footer-copywrigth {
   text-align: center;
@@ -592,9 +593,9 @@ p {
 
   /* bmi  */
   .bmi-title {
-    margin-left: 100px;
+    /* margin-left: 100px; */
     text-align: left;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
   .bmi-boundary {
     border: 2px solid red;
@@ -613,8 +614,9 @@ p {
 
     /* background-color: rgb(34, 34, 34); */
   }
+
   .bmi-chart {
-    margin-left: 100px;
+    margin-left: 30px;
     /* width: 90%;
      */
     width: 100%;
@@ -626,7 +628,13 @@ p {
   .bmi-calculator {
     margin-right: 0px;
   }
+  .bmi-calculator h2 {
+    text-align: left;
+  }
   .bmi-calculator p {
+    text-align: left;
+  }
+  .bmi-boundary {
     text-align: left;
   }
 
@@ -679,11 +687,16 @@ p {
   .gym-benefits-image {
     max-width: 100%;
   }
+  .gym-benefits-title {
+    text-align: left;
+  }
 
   .benefits-list li {
     width: 100%; /* Full width on small screens */
   }
-
+  .cta-content {
+    text-align: left;
+  }
   .cta-title {
     font-size: 1.8rem;
   }
@@ -693,12 +706,12 @@ p {
     margin-bottom: 25px;
   }
 
-  .cta-button {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
   .footer {
     grid-template-columns: 1fr;
+  }
+  #footer-copywrigth {
+    text-align: left;
+    margin-left: 50px;
   }
   .get-started-1 {
     margin-left: 0px;
