@@ -107,6 +107,7 @@ nav {
 }
 .banner p {
   opacity: 0.5;
+  text-align: left;
 }
 .banner-left {
   width: 40%;
@@ -234,7 +235,7 @@ nav {
 }
 /* bmi section  */
 .bmi-title {
-  margin-left: 300px;
+  margin-left: 100px;
 }
 .bmi-description {
   margin-left: 80px;
@@ -515,7 +516,9 @@ p {
   }
 
   .banner {
+    margin-left: 20px;
     flex-direction: column;
+    align-items: center;
   }
 
   .banner-button {
@@ -525,28 +528,38 @@ p {
   .banner h1 {
     font-size: 36px;
   }
-  .banner-left {
-    width: 100%;
+  .banner-left,
+  .banner-image {
+    width: 100%; /* Full width on small screens */
     margin-left: 0;
-    margin-right: 0;
+    /* Remove left margin */
+  }
+  .banner-image {
+    width: 300px;
+    height: 400px;
   }
   .dancing-script-shape {
     /* font-style: normal; */
     font-size: 40px;
   }
+  .join-club-button,
   .download-app-button {
+    width: 100%;
     width: 200px;
   }
 
   .banner-image-writings {
     /* top: 20px; */
-
-    top: 650px;
-    right: 30px;
+    width: 200px;
+    height: 100px;
+    top: 300px;
+    right: 20px;
   }
   .banner-video-writings {
+    width: 200px;
+    height: 100px;
     left: 50px;
-    top: 1000px;
+    top: 500px;
   }
   .play-icon {
     display: block;
@@ -598,12 +611,15 @@ p {
     /* margin: 0 auto; */
   }
   .bmi-boundary {
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    text-align: left;
   }
   .bmi-description {
     width: 100%;
     margin-left: 30px;
-    text-align: left;
+
+    /* text-align: left; */
+
     margin: 0 auto;
   }
   .bmi-section {
