@@ -7,9 +7,13 @@
 body {
   background-color: black;
   /* background-color: blue; */
+  margin: 0;
+
+  color: white;
+}
+.container {
   margin-left: 100px;
   margin-right: 100px;
-  color: white;
 }
 body p {
   opacity: 0.5;
@@ -214,7 +218,9 @@ nav {
   border-radius: 20px;
   padding: 50px;
 }
-
+.run-extra-mile p {
+  text-align: left;
+}
 .run-description {
   width: 40%;
 }
@@ -234,9 +240,12 @@ nav {
 /* meet our team  */
 .team-section {
   margin-top: 100px;
+
+  margin-bottom: 100px;
 }
 .teams {
   padding: 10px;
+  border-radius: 20px;
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -266,13 +275,40 @@ nav {
 p {
   text-align: center;
 }
+
+/* footer section  */
+.footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 50px;
+}
+.footer p {
+  text-align: left;
+}
+.get-started-1 {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.get-started {
+  margin-top: 30px;
+}
+
+.footer h1 {
+  color: rgb(230, 83, 60);
+}
+.horizantal-line {
+  text-align: center;
+  width: 100%;
+}
+#footer-copywrigth {
+  text-align: center;
+}
 /* media query for small device  */
 @media screen and (max-width: 600px) {
-  body {
-    background-color: black;
-    /* background-color: blue; */
-    margin-left: 50px;
-    margin-right: 50px;
+  .container {
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .hamburger {
     display: block;
@@ -371,5 +407,12 @@ p {
   }
   .trainer-hidden {
     display: none;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+  }
+  .get-started-1 {
+    margin-left: 0px;
+    margin-top: 30px;
   }
 }
