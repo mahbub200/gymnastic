@@ -237,10 +237,9 @@ nav {
 }
 /* bmi section  */
 .bmi-title {
-  margin-left: 100px;
+  margin-left: 300px;
 }
 .bmi-description {
-  margin-left: 80px;
 }
 .bmi-section {
   padding: 20px;
@@ -612,16 +611,20 @@ p {
   }
 
   /* bmi  */
-  .bmi-title {
-    /* margin-left: 100px; */
-    text-align: left;
-    /* margin: 0 auto; */
-  }
+
   .bmi-boundary {
     /* border: 2px solid red; */
     text-align: left;
+    /* margin-left: 20px; */
+  }
+
+  .bmi-title {
+    margin-left: 50px;
+    text-align: left;
   }
   .bmi-description {
+    text-align: left;
+
     width: 100%;
     margin-left: 30px;
 
@@ -634,6 +637,7 @@ p {
     flex-wrap: wrap;
     flex-direction: column;
     overflow-x: hidden;
+    margin-top: 30px;
 
     /* background-color: rgb(34, 34, 34); */
   }
